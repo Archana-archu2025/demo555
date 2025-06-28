@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="Test-1">
+    <classes>
+      <class name="com.comcast.crm.contacttest.create_contect_with_date"/>
+      <class name="com.comcast.crm.orgtest.create_org_with_type_and_industry"/>
+      <class name="com.comcast.crm.orgtest.createAnddeleteOrg"/>
+      
+    </classes>
+     </test> <!-- Test -->
+    <test name="Test-2">
+     <classes>
+    <class name="com.comcast.crm.orgtest.create_org_with_phonenumber"/>
+      <class name="com.comcast.crm.contacttest.create_contect_with_date_and_verify_org"/>
+      <class name="com.comcast.crm.orgtest.create_organization"/>
+       </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
